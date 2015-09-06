@@ -9,14 +9,14 @@ PPSDiscrete(trees, MCMC, states, N = 2)
 }
 \arguments{
   \item{trees}{an object of class "multiPhylo" or "phylo" containing the trees used in generting the rate estimates}
-  \item{MCMC}{MCMC states bring this will normally be a log file that is brought into R with read.csv the columns for a three state character should be: tree, qAA, qBA, qCA, qAB, qBB, qCB, qAC, qBC, qCC.  If your analysis involves only a single tree then the tree column should be excluded.}
+  \item{MCMC}{this will normally be a log file that is brought into R with read.csv the columns for a three state character should be: tree, qAA, qBA, qCA, qAB, qBB, qCB, qAC, qBC, qCC.  If your analysis involves only a single tree then the tree column should be excluded.}
   \item{states}{a vector of root probabilities}
   \item{N}{the number of PPS datasets desired}
 }
 \value{
 A matrix is returned with the rownames being the species names from the tree and each column containing a result of a single PPS.
 }
-\references{\url{http://www.uta.edu/karyodb/evobiR/}}
+\references{\url{http://coleoguy.github.io/}}
 \author{Heath Blackmon}
 \examples{
 data(trees)
